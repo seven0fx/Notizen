@@ -17,3 +17,11 @@ https://askubuntu.com/questions/1177762/sound-cracking-and-popping-ubuntu-19-04
     lfe-crossover-freq = 250
 
     default-sample-channels = 6
+    
+* Pulseaudio default auf 5.1 stellen:
+
+`pacmd list-sinks | grep -e 'name:' -e 'index:'`
+
+`sudo nano /etc/pulse/default.pa`
+
+    set-default-sink lsa_output.pci-0000_0a_00.4.analog-surround-51
