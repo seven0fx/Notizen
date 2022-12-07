@@ -24,4 +24,4 @@ https://askubuntu.com/questions/1177762/sound-cracking-and-popping-ubuntu-19-04
 
 `sudo nano /etc/pulse/default.pa`
 
-    set-default-sink lsa_output.pci-0000_0a_00.4.analog-surround-51
+    set-default-sink alsa_output.pci-0000_0a_00.4.analog-surround-51
