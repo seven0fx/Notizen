@@ -37,3 +37,6 @@ If the previous step worked for you, persist that configuration (otherwise the p
 `sudo nano /etc/pulse/default.pa`
 
     set-default-sink alsa_output.pci-0000_0a_00.4.analog-surround-51
+
+
+https://ip-life.net/install-realtek-rtl88x2bu-wireless-drivers-linux-mint/
