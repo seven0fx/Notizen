@@ -1,0 +1,19 @@
+im Terminal:
+
+# 1. Create a temporary orphan branch (it has no history)
+git checkout --orphan temp_branch
+
+# 2. Add all your current files
+git add -A
+
+# 3. Commit the files
+git commit -am "Initial commit"
+
+# 4. Delete your old main branch (replace 'main' if your branch is named 'master')
+git branch -D main
+
+# 5. Rename your temporary branch to main
+git branch -m main
+
+# 6. Force-push to GitHub to overwrite the remote history
+git push -f origin main
